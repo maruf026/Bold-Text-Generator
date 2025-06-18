@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bold Text Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bold Text Generator</h2>
+      <input
+        type="text"
+        id="inputText"
+        placeholder="Type your English text..."
+        oninput="convertText()"
+      />
+
+      <div class="output-group">
+        <div class="copy-container">
+          <input
+            type="text"
+            id="boldSansText"
+            placeholder="Bold text will appear here"
+            readonly
+          />
+          <button class="copy-btn" onclick="copyText('boldSansText')">
+            Copy
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="copyMsg">Copied to clipboard!</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
